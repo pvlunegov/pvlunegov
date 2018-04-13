@@ -1,32 +1,94 @@
+@font-face {
+  font-family: 'fira_sansregular';
+  src: url("/fonts/firasans-regular-webfont.eot");
+  src: url("/fonts/firasans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/firasans-regular-webfont.woff2") format("woff2"), url("/fonts/firasans-regular-webfont.woff") format("woff"), url("/fonts/firasans-regular-webfont.ttf") format("truetype"), url("/fonts/firasans-regular-webfont.svg#fira_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fira_sansbold';
+  src: url("/fonts/firasans-bold-webfont.eot");
+  src: url("/fonts/firasans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/firasans-bold-webfont.woff2") format("woff2"), url("/fonts/firasans-bold-webfont.woff") format("woff"), url("/fonts/firasans-bold-webfont.ttf") format("truetype"), url("/fonts/firasans-bold-webfont.svg#fira_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fira_sanslight';
+  src: url("/fonts/firasans-light-webfont.eot");
+  src: url("/fonts/firasans-light-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/firasans-light-webfont.woff2") format("woff2"), url("/fonts/firasans-light-webfont.woff") format("woff"), url("/fonts/firasans-light-webfont.ttf") format("truetype"), url("/fonts/firasans-light-webfont.svg#fira_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fira_sansmedium';
+  src: url("/fonts/firasans-medium-webfont.eot");
+  src: url("/fonts/firasans-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/firasans-medium-webfont.woff2") format("woff2"), url("/fonts/firasans-medium-webfont.woff") format("woff"), url("/fonts/firasans-medium-webfont.ttf") format("truetype"), url("/fonts/firasans-medium-webfont.svg#fira_sansmedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .sidebar {
-    width: 23%;
-    float: left;
+  width: 14.375rem;
+  float: left;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    float: none;
+    margin-bottom: 2.1875rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__item {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .nav__list {
-    text-align: right;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__list {
+    text-align: left;
+  }
 }
 
 .nav__link {
-    display: block;
-    padding: 10px 0;
-    padding-right: 20px;
-    color: #414141;
-    text-decoration: none;
-    border-right: 6px solid transparent;
-    font-size: 18px;
+  display: block;
+  padding: 0.6rem 0;
+  padding-right: 1.5rem;
+  color: #414141;
+  text-decoration: none;
+  border-right: 0.375rem solid transparent;
 }
 
 .nav__link:hover {
-    color: #33c1e3;
+  color: #33c1e3;
 }
 
 .nav__link:active {
-    color: #33c1e3;
-    border-color: #33c1e3;
+  color: #33c1e3;
+  border-color: #33c1e3;
+  font-family: 'fira_sansregular';
+  font-family: 'fira_sansbold';
 }
 
 .nav__item_active .nav__link {
-    border-color: #33c1e3;
-    color: #33c1e3;
+  border-color: #33c1e3;
+  font-family: 'fira_sansregular';
+  font-family: 'fira_sansbold';
 }
+
+@media screen and (max-width: 768px) {
+  .nav__item_active .nav__link {
+    border: 0;
+  }
+}
+/*# sourceMappingURL=sidebar.css.map */

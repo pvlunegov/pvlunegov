@@ -1,0 +1,77 @@
+@import "../_misc/mixins.scss";
+@import "../_misc/fonts.scss";
+@import "../variables.scss";
+
+.about {
+	@extend %clearfix;
+}
+
+.about__left {
+	float: left;
+	width: rem(280px);
+	text-align: center;
+}
+
+.about__pic {
+	display: inline-block;
+	overflow: hidden;
+	border: 3px solid #fff;
+	overflow: hidden;
+	@include border-radius(50%);
+	width: rem(172px);
+	height: rem(172px);
+	background: black;
+	background: url('/img/content/ava-big.jpg') center center no-repeat;
+	background-size: 100%;
+}
+
+.about__pic-item {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+}
+
+.about__right {
+	width: rem(390px);
+	float: right;
+}
+
+.text-block {
+	color: #646464;
+	font-size: rem(18px);
+	//line-height: 24px;
+	@include fira(light);
+}
+
+.about__text {
+	height: rem(290px);
+	overflow: auto;
+	margin-bottom: rem(35px);
+}
+
+.about__download {
+	text-align: right;
+}
+
+.text-block {
+	p {
+		margin: 0;
+		margin-bottom: rem(10px);
+	}
+
+	h1 {
+
+	}
+
+	h2 {
+
+	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5),
+screen and (min-resolution: 144dpi) {
+	.about__pic {
+		background: url('/img/content/ava-retina@2x.jpg') center center no-repeat;
+		background-size: 100%;
+	}
+}

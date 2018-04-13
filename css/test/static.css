@@ -1,3 +1,12 @@
+.text-block:after, .gallery__list:after, .text-block:before, .gallery__list:before {
+  content: "";
+  display: table;
+}
+
+.text-block:after, .gallery__list:after {
+  clear: both;
+}
+
 @font-face {
   font-family: 'fira_sansregular';
   src: url("/fonts/firasans-regular-webfont.eot");
@@ -30,76 +39,58 @@
   font-style: normal;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 .container {
-  position: relative;
+  margin: 0 auto;
+  width: 970px;
 }
 
-.header {
-  background: #fff;
-  box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.2);
-  margin-bottom: 1.25rem;
+.text-block {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
 }
 
-.header .container {
-  height: 5rem;
-  position: relative;
+.text-block__left {
+  float: left;
+  width: 50%;
 }
 
-.user {
-  position: absolute;
-  top: 0.6rem;
-  left: 0;
-}
-
-.user__avatar {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-}
-
-.user__avatar-pic {
+.text-block__left img {
   display: block;
+  max-width: 100%;
 }
 
-.user__name {
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 15.625rem;
+.text-block__right {
+  float: left;
+  width: 47%;
+  margin-left: 3%;
 }
 
-.contacts {
-  position: absolute;
-  right: 0;
-  top: 1.875rem;
+.gallery__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.contacts__trigger {
-  text-decoration: none;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  color: #33c1e3;
-  background: url("/img/decor/dotted-border.png") 0 bottom repeat-x;
+.gallery__item {
+  float: left;
+  width: 25%;
+  margin-bottom: 10px;
 }
 
-.about__download-link {
-  padding: 0.5625rem 0.75rem;
-  border: 2px solid #e85f61;
-  color: #e85f61;
-  text-decoration: none;
-  font-size: 0.875rem;
-  display: inline-block;
-  border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
+.gallery__item-inner {
+  padding: 0 10px;
 }
 
-.about__download-link:hover {
-  color: #fff;
-  background: #e85f61;
+.gallery__item-inner img {
+  display: block;
+  max-width: 100%;
 }
-/*# sourceMappingURL=header.css.map */
+/*# sourceMappingURL=static.css.map */
