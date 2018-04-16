@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'fira_sansregular';
+  src: url("/fonts/firasans-regular-webfont.eot");
+  src: url("/fonts/firasans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/firasans-regular-webfont.woff2") format("woff2"), url("/fonts/firasans-regular-webfont.woff") format("woff"), url("/fonts/firasans-regular-webfont.ttf") format("truetype"), url("/fonts/firasans-regular-webfont.svg#fira_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fira_sansbold';
+  src: url("/fonts/firasans-bold-webfont.eot");
+  src: url("/fonts/firasans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/firasans-bold-webfont.woff2") format("woff2"), url("/fonts/firasans-bold-webfont.woff") format("woff"), url("/fonts/firasans-bold-webfont.ttf") format("truetype"), url("/fonts/firasans-bold-webfont.svg#fira_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fira_sanslight';
+  src: url("/fonts/firasans-light-webfont.eot");
+  src: url("/fonts/firasans-light-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/firasans-light-webfont.woff2") format("woff2"), url("/fonts/firasans-light-webfont.woff") format("woff"), url("/fonts/firasans-light-webfont.ttf") format("truetype"), url("/fonts/firasans-light-webfont.svg#fira_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fira_sansmedium';
+  src: url("/fonts/firasans-medium-webfont.eot");
+  src: url("/fonts/firasans-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/firasans-medium-webfont.woff2") format("woff2"), url("/fonts/firasans-medium-webfont.woff") format("woff"), url("/fonts/firasans-medium-webfont.ttf") format("truetype"), url("/fonts/firasans-medium-webfont.svg#fira_sansmedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* --------- tabs --------- */
+.tabs {
+  width: 400px;
+  border: 2px dashed #414141;
+  padding: 10px;
+  min-height: 300px;
+}
+
+.tabs__num {
+  font-size: 30px;
+  color: #1abc9c;
+}
+
+.tabs__list {
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #727272;
+}
+
+.tabs__item {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.tabs__item.active .tabs__link {
+  background: #e67e22;
+  color: #f6f6f6;
+}
+
+.tabs__item:first-child {
+  margin-left: 0;
+}
+
+.tabs__link {
+  display: block;
+  padding: 5px 10px;
+  color: #414141;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Courier New";
+}
+
+.tabs__content-item {
+  display: none;
+}
+
+.tabs__content-item.active {
+  display: block;
+}
+/*# sourceMappingURL=tabs.css.map */

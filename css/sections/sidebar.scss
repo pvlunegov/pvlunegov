@@ -1,0 +1,59 @@
+@import "../_misc/mixins.scss";
+@import "../_misc/fonts.scss";
+@import "../variables.scss";
+
+.sidebar {
+	width: rem(230px);
+	float: left;
+
+	@include tablets {
+		width: 100%;
+		float: none;
+		margin-bottom: rem(35px);
+	}
+}
+
+.nav__item {
+	@include tablets {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.nav__list {
+	text-align: right;
+
+	@include tablets {
+		text-align: left;
+	}
+}
+
+.nav__link {
+	display: block;
+	padding: 0.6rem 0;
+	padding-right: 1.5rem;
+	color: $black;
+	text-decoration: none;
+	border-right: rem(6px) solid transparent;
+
+	&:hover {
+		color: $blue;
+	}
+
+	&:active {
+		color: $blue;
+		border-color: $blue;
+		@include fira(bold);
+	}
+}
+
+.nav__item_active {
+	.nav__link {
+		border-color: $blue;
+		@include fira(bold);
+
+		@include tablets {
+			border: 0;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+@import "../_misc/mixins.scss";
+@import "../_misc/fonts.scss";
+@import "../variables.scss";
+
+/* --------- tabs --------- */
+
+.tabs {
+	width: 400px;
+	border: 2px dashed $black;
+	padding: 10px;
+	min-height: 300px;
+}
+
+.tabs__num {
+	font-size: 30px;
+	color: $green;
+}
+
+.tabs__list {
+	text-align: center;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px dashed $grey;
+}
+
+.tabs__item {
+	display: inline-block;
+	margin-left: 20px;
+
+	&.active {
+		.tabs__link {
+			background: $orange;
+			color: $white;
+		}
+	}
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.tabs__link {
+	display: block;
+	padding: 5px 10px;
+	color: $black;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: "Courier New";
+}
+
+.tabs__content-item {
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}

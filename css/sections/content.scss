@@ -1,0 +1,30 @@
+@import "../_misc/mixins.scss";
+@import "../_misc/fonts.scss";
+@import "../variables.scss";
+
+.stuff {
+	width: rem(710px);
+	float: right;
+
+	@include tablets {
+		width: 100%;
+		float: none;
+	}
+}
+
+.content {
+	.container {
+		@extend %clearfix;
+	}
+}
+
+.content-title {
+	font-size: rem(35px);
+	color: $black;
+	//line-height: 38px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: normal;
+	@include fira(medium);
+	margin-bottom: rem(25px);
+}

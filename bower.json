@@ -1,0 +1,8 @@
+{
+  "name": "work-template",
+  "version": "0.1.0",
+  "dependencies": {
+    "bxslider-4": "bx-slider.js#^4.2.5",
+    "jquery": "1.11.3"
+  }
+}

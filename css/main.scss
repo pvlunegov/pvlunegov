@@ -1,0 +1,29 @@
+
+@import "variables.scss";
+
+// Misc (Miscelaneous)
+@import "_misc/fonts.scss";
+@import "_misc/mixins.scss";
+@import "_misc/adjustment.scss";
+@import "_misc/normalize.scss";
+@import "_misc/font-awesome.scss";
+
+// styles
+@import "sections/header.scss";
+@import "sections/sidebar.scss";
+@import "sections/content.scss";
+@import "sections/about.scss";
+@import "sections/career.scss";
+@import "sections/portfolio.scss";
+@import "sections/footer.scss";
+@import "sections/auth.scss";
+
+
+@import "sections/tabs.scss";
+@import "sections/slideshow.scss";
+@import "sections/acco.scss";
+@import "sections/slider.scss";
+
+
+//media
+@import "adaptive/media.scss";

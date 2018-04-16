@@ -1,0 +1,15 @@
+@import "../_misc/mixins.scss";
+@import "../_misc/fonts.scss";
+@import "../variables.scss";
+
+.bx-wrapper {
+	box-shadow: none;
+}
+
+.slider__item {
+	text-align: center;
+
+	img {
+		display: inline-block;
+	}
+}

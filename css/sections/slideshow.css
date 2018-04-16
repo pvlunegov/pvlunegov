@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'fira_sansregular';
+  src: url("/fonts/firasans-regular-webfont.eot");
+  src: url("/fonts/firasans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/firasans-regular-webfont.woff2") format("woff2"), url("/fonts/firasans-regular-webfont.woff") format("woff"), url("/fonts/firasans-regular-webfont.ttf") format("truetype"), url("/fonts/firasans-regular-webfont.svg#fira_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fira_sansbold';
+  src: url("/fonts/firasans-bold-webfont.eot");
+  src: url("/fonts/firasans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/firasans-bold-webfont.woff2") format("woff2"), url("/fonts/firasans-bold-webfont.woff") format("woff"), url("/fonts/firasans-bold-webfont.ttf") format("truetype"), url("/fonts/firasans-bold-webfont.svg#fira_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fira_sanslight';
+  src: url("/fonts/firasans-light-webfont.eot");
+  src: url("/fonts/firasans-light-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/firasans-light-webfont.woff2") format("woff2"), url("/fonts/firasans-light-webfont.woff") format("woff"), url("/fonts/firasans-light-webfont.ttf") format("truetype"), url("/fonts/firasans-light-webfont.svg#fira_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fira_sansmedium';
+  src: url("/fonts/firasans-medium-webfont.eot");
+  src: url("/fonts/firasans-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/firasans-medium-webfont.woff2") format("woff2"), url("/fonts/firasans-medium-webfont.woff") format("woff"), url("/fonts/firasans-medium-webfont.ttf") format("truetype"), url("/fonts/firasans-medium-webfont.svg#fira_sansmedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* --------- slideshow --------- */
+.slideshow {
+  width: 400px;
+  padding: 10px;
+  border: 2px solid #414141;
+}
+
+.slideshow__fullsize {
+  height: 300px;
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #727272;
+  margin-bottom: 20px;
+}
+
+.slideshow__fullsize img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.slideshow__thumbs {
+  text-align: center;
+}
+
+.slideshow__thumbs-item {
+  padding: 5px;
+  border: 2px solid transparent;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.slideshow__thumbs-item.active {
+  border-color: #8e44ad;
+}
+
+.slideshow__thumbs-item:first-child {
+  margin-left: 0px;
+}
+
+.slideshow__thumbs-link {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow__thumbs-link img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.slideshow__preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/img/preloader.gif") center center no-repeat;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  display: none;
+}
+/*# sourceMappingURL=slideshow.css.map */
