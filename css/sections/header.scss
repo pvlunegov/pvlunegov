@@ -40,9 +40,54 @@
 }
 
 .contacts {
-	position: absolute;
 	right: 0;
-	top: rem(30px);
+    top: 1.875rem;
+    position: absolute;
+    vertical-align: middle;
+
+	//* {
+	//	line-height: 1.42;
+	//}
+
+	&:hover {
+		background-color: aquamarine;
+
+		.contacts__dropdown {
+			left: rem(-100px);
+			opacity: 1;
+		}
+	}
+}
+
+.contacts__dropdown {
+    width: rem(300px);
+	text-align: center;
+	background: #fff;
+	height: rem(200px);
+	border: 1px solid #000;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	z-index: 1000;
+	left: -9999px;
+	margin-top: rem(10px);
+	opacity: 0;
+	transition: opacity .5s;
+	* {
+		line-height: 1.42;
+	}
+	&:before {
+		display: block;
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: rem(25px);
+		top: rem(-23px);
+	}  
+	.contacts__dropdown-item {
+		padding: rem(5px);
+	}
 }
 
 .contacts__trigger {
@@ -50,8 +95,11 @@
 	font-size: rem(18px);
 	line-height: rem(28px);
 	color: $blue;
-	// border-bottom: 2px dotted @blue;
-	background: url('img/decor/dotted-border.png') 0 bottom repeat-x;
+	border-bottom: 2px dotted $blue;
+	//background: url('img/decor/dotted-border.png') 0 bottom repeat-x;
+
+	display: inline-block;
+	position: relative;
 }
 
 .about__download-link {

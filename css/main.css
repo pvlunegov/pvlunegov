@@ -3369,9 +3369,54 @@ th {
 }
 
 .contacts {
-  position: absolute;
   right: 0;
   top: 1.875rem;
+  position: absolute;
+  vertical-align: middle;
+}
+
+.contacts:hover {
+  background-color: aquamarine;
+}
+
+.contacts:hover .contacts__dropdown {
+  left: -6.25rem;
+  opacity: 1;
+}
+
+.contacts__dropdown {
+  width: 18.75rem;
+  text-align: center;
+  background: #fff;
+  height: 12.5rem;
+  border: 1px solid #000;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 1000;
+  left: -9999px;
+  margin-top: 0.625rem;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.contacts__dropdown * {
+  line-height: 1.42;
+}
+
+.contacts__dropdown:before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1.5625rem;
+  top: -1.4375rem;
+}
+
+.contacts__dropdown .contacts__dropdown-item {
+  padding: 0.3125rem;
 }
 
 .contacts__trigger {
@@ -3379,7 +3424,9 @@ th {
   font-size: 1.125rem;
   line-height: 1.75rem;
   color: #33c1e3;
-  background: url("img/decor/dotted-border.png") 0 bottom repeat-x;
+  border-bottom: 2px dotted #33c1e3;
+  display: inline-block;
+  position: relative;
 }
 
 .about__download-link {
