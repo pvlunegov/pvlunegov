@@ -19,12 +19,29 @@
 }
 
 .content-title {
+	text-align: center;
 	font-size: rem(35px);
 	color: $black;
-	//line-height: 38px;
 	margin-top: 0;
 	margin-bottom: 0;
 	font-weight: normal;
 	@include fira(medium);
 	margin-bottom: rem(25px);
+}
+
+.section {
+	align-content: center; 
+	text-align: center;
+	margin-bottom: 30px;	
+}
+
+.section__title {
+	text-align: center;
+	font-size: rem(18px);
+	color: $black;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: normal;
+	@include fira(medium);
+	margin-bottom: rem(25px);	
 }

@@ -82,14 +82,17 @@ $(document).ready(function() {
 						.siblings()
 						.removeClass('active')
 						.find('.acco__content')
+						//.stop(true,true)
 						.slideUp(duration);
 
+					//currentContent.stop(true,true).slideDown(duration, function () {	
 					currentContent.slideDown(duration, function () {
 						flag = true
 					});
 				} else {
 
 					item.removeClass('active');
+					//currentContent.stop(true,true).slideUp(function() {
 					currentContent.slideUp(function() {
 						flag = true
 					});

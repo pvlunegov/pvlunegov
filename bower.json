@@ -1,8 +1,28 @@
 {
-  "name": "work-template",
+  "name": "portfolio",
   "version": "0.1.0",
   "dependencies": {
     "bxslider-4": "bx-slider.js#^4.2.5",
     "jquery": "1.11.3"
-  }
+  },
+  "authors": [
+    "Peter Lunegov <pvlunegov@mail.ru>"
+  ],
+  "description": "Мой сайт-портфолио",
+  "main": "index.html",
+  "keywords": [
+    "портфолио",
+    "pvlunegov",
+    "программист"
+  ],
+  "license": "MIT",
+  "homepage": "braincolor.ru",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }

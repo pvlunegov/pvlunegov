@@ -3,7 +3,8 @@
 @import "../variables.scss";
 
 .acco {
-	width: 400px;
+	max-width: rem(400px);
+	display: inline-block;
 }
 
 

@@ -5,11 +5,17 @@
 .bx-wrapper {
 	box-shadow: none;
 }
+.slider {
+	display: inline-block;
+	max-width: rem(600px);
+}
 
 .slider__item {
 	text-align: center;
+	align-content: center;
 
 	img {
-		display: inline-block;
+		display: inline-block !important;
+		//display: inline-block;
 	}
 }

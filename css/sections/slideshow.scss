@@ -8,6 +8,7 @@
 	width: 400px;
 	padding: 10px;
 	border: 2px solid $black;
+	display: inline-block;
 }
 
 .slideshow__fullsize {
@@ -24,8 +25,8 @@
 		right: 0;
 		bottom: 0;
 		margin: auto;
-		max-width: 90%;
-		max-height: 90%;
+		width: 90%;
+		height: 90%;
 	}
 }
 
@@ -64,8 +65,8 @@
 		bottom: 0;
 		position: absolute;
 		margin: auto;
-		max-width: 90%;
-		max-height: 90%;
+		width: 90%;
+		height: 90%;
 	}
 }
 
@@ -77,7 +78,7 @@
 	bottom: 0;
 	background: url("/img/preloaders/preloader.gif") center center no-repeat;
 	margin: auto;
-	width: 64px;
-	height: 64px;
+	width: rem(64px);
+	height: rem(64px);
 	display: none;
 }

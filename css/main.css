@@ -121,6 +121,9 @@ html, body {
 }
 
 .wrapper {
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   min-height: 100%;
   overflow: hidden;
   position: relative;
@@ -3603,7 +3606,27 @@ th {
 }
 
 .content-title {
+  text-align: center;
   font-size: 2.1875rem;
+  color: #414141;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-family: 'fira_sansregular';
+  font-family: 'fira_sansmedium';
+  margin-bottom: 1.5625rem;
+}
+
+.section {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 1.125rem;
   color: #414141;
   margin-top: 0;
   margin-bottom: 0;
@@ -4177,6 +4200,7 @@ th {
   border: 2px dashed #414141;
   padding: 10px;
   min-height: 300px;
+  display: inline-block;
 }
 
 .tabs__num {
@@ -4269,6 +4293,7 @@ th {
   width: 400px;
   padding: 10px;
   border: 2px solid #414141;
+  display: inline-block;
 }
 
 .slideshow__fullsize {
@@ -4286,8 +4311,8 @@ th {
   right: 0;
   bottom: 0;
   margin: auto;
-  max-width: 90%;
-  max-height: 90%;
+  width: 90%;
+  height: 90%;
 }
 
 .slideshow__thumbs {
@@ -4326,8 +4351,8 @@ th {
   bottom: 0;
   position: absolute;
   margin: auto;
-  max-width: 90%;
-  max-height: 90%;
+  width: 90%;
+  height: 90%;
 }
 
 .slideshow__preloader {
@@ -4338,8 +4363,8 @@ th {
   bottom: 0;
   background: url("/img/preloaders/preloader.gif") center center no-repeat;
   margin: auto;
-  width: 64px;
-  height: 64px;
+  width: 4rem;
+  height: 4rem;
   display: none;
 }
 
@@ -4385,7 +4410,8 @@ th {
 }
 
 .acco {
-  width: 400px;
+  max-width: 25rem;
+  display: inline-block;
 }
 
 .acco__item {
@@ -4464,12 +4490,19 @@ th {
           box-shadow: none;
 }
 
+.slider {
+  display: inline-block;
+  max-width: 37.5rem;
+}
+
 .slider__item {
   text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .slider__item img {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .content .container:after, .about:after, .content .container:before, .about:before {
@@ -4519,6 +4552,7 @@ th {
   border: 2px dashed #414141;
   padding: 10px;
   min-height: 300px;
+  display: inline-block;
 }
 
 .tabs__num {
@@ -4677,7 +4711,8 @@ th {
 }
 
 .acco {
-  width: 400px;
+  max-width: 25rem;
+  display: inline-block;
 }
 
 .acco__item {
@@ -4757,5 +4792,56 @@ th {
   .container {
     width: auto;
   }
+}
+
+.player {
+  position: relative;
+  display: inline-block;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3.125rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.controls a, .controls .time {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.play {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.time {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.timeline {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 50px;
+  right: 70px;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: cornflowerblue;
 }
 /*# sourceMappingURL=main.css.map */

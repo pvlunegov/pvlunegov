@@ -32,6 +32,7 @@
 
 .acco {
   width: 400px;
+  display: inline-block;
 }
 
 .acco__item {

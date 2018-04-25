@@ -36,6 +36,7 @@
   border: 2px dashed #414141;
   padding: 10px;
   min-height: 300px;
+  display: inline-block;
 }
 
 .tabs__num {

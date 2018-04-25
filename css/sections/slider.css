@@ -35,11 +35,18 @@
           box-shadow: none;
 }
 
+.slider {
+  display: inline-block;
+  max-width: 37.5rem;
+}
+
 .slider__item {
   text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .slider__item img {
-  display: inline-block;
+  display: inline-block !important;
 }
 /*# sourceMappingURL=slider.css.map */
