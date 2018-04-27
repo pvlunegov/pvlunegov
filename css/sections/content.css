@@ -64,8 +64,7 @@
 }
 
 .section {
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   text-align: center;
   margin-bottom: 30px;
 }

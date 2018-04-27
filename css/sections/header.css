@@ -40,6 +40,7 @@
   -webkit-box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 1.25rem;
+  height: 5rem;
 }
 
 .header .container {
@@ -79,21 +80,94 @@
   display: block;
 }
 
+.other-site_pic {
+  position: absolute;
+  height: 50%;
+  top: 0.45rem;
+  left: 0.45rem;
+}
+
+.other-site_pic-left {
+  display: block;
+  height: 70%;
+  margin-top: 0.8rem;
+}
+
+.other-site_pic {
+  position: absolute;
+  display: block;
+  height: 50%;
+  top: 0.45rem;
+  left: 0.45rem;
+}
+
 .user__name {
   display: inline-block;
   vertical-align: middle;
   max-width: 15.625rem;
 }
 
-.icon {
+.other-site__name {
+  display: inline-block;
+  vertical-align: middle;
+  top: 50%;
   position: absolute;
+  top: 2rem;
+}
+
+.other-site {
+  display: block;
+}
+
+.other-site-left {
+  position: absolute;
+  text-align: left;
+  top: 0;
+  left: 0;
+  width: 28%;
+  height: 100%;
+}
+
+.other-site-right {
+  position: absolute;
+  text-align: right;
+  top: 0;
+  right: 0;
+  width: 10%;
+  height: 100%;
+}
+
+.other-site_logo {
+  display: inline-block;
+  text-align: left;
   top: 0.6rem;
+  height: 5rem;
+}
+
+.other-site-menu {
+  display: inline-block;
+}
+
+.other-site-menu__list {
+  display: inline-block;
+  margin: 1.4375rem 1.25rem;
+}
+
+.icon {
+  margin-top: 1rem;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
 }
 
 .icon_right {
   position: absolute;
-  top: 0.6rem;
   right: 0;
+}
+
+.icon_left {
+  position: absolute;
+  left: 0;
 }
 
 .icon_red_background {
@@ -166,7 +240,6 @@
   left: -9999px;
   margin-top: 0.625rem;
   opacity: 0;
-  -webkit-transition: opacity .5s;
   transition: opacity .5s;
 }
 
@@ -201,7 +274,6 @@
   left: -9999px;
   margin-top: 0.625rem;
   opacity: 0;
-  -webkit-transition: opacity .5s;
   transition: opacity .5s;
 }
 
@@ -235,7 +307,6 @@
   left: -9999px;
   margin-top: 0.625rem;
   opacity: 0;
-  -webkit-transition: opacity .5s;
   transition: opacity .5s;
 }
 

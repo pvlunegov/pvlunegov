@@ -2,6 +2,7 @@
 @import "../_misc/fonts.scss";
 @import "../variables.scss";
 
+
 .container {
 	position: relative;
 }
@@ -10,6 +11,7 @@
 	background: #fff;
 	@include box-shadow(0 -1px 3px 0 rgba(00, 00, 00, .2));
 	margin-bottom: 1.25rem;
+	height: rem(80px);
 	
 	.container {
 		height: 5rem;
@@ -40,25 +42,91 @@
 	@include border-radius(50%);
 }
 
+
 .user__avatar-pic {
 	display: block;
 }
 
+.other-site_pic {
+	position: absolute;
+	height: 50%;
+	top: 0.45rem;
+	left: 0.45rem;
+}
+
+.other-site_pic-left {
+	display: block;
+	height: 70%;
+	margin-top: 0.8rem;
+}
+.other-site_pic {
+	position: absolute;
+	display: block;
+	height: 50%;
+	top: 0.45rem;
+	left: 0.45rem;
+}
 
 .user__name {
 	@include inlineblock(middle);
 	max-width: rem(250px);
 }
+.other-site__name{
+	@include inlineblock(middle);
+	//max-width: rem(250px);
+	top: 50%;
+	position: absolute;
+    top: 2rem;
+}
+
+.other-site {
+	display: block;
+}
+.other-site-left {
+	position: absolute;
+	text-align: left;
+	top: 0;
+	left: 0;
+	width: 28%;
+	height: 100%;
+}
+.other-site-right {
+	position: absolute;
+	text-align: right;
+	top: 0;
+	right: 0;
+	width: 10%;
+	height: 100%;
+}
+
+.other-site_logo {
+	display: inline-block;
+	text-align: left;
+	top: 0.6rem;
+	height: rem(80px);
+}
+.other-site-menu {
+	display: inline-block;
+}
+.other-site-menu__list {
+	display: inline-block;
+	margin: rem(23px) rem(20px);	
+}
+
 
 .icon {
-	position: absolute;
-	top: 0.6rem;
+	margin-top: 1rem;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
 }
 .icon_right {
-	//display: inline-block;
 	position: absolute;
-	top: 0.6rem;
 	right: 0;
+}
+.icon_left {
+	position: absolute;
+	left: 0;
 }
 .icon_red_background {
 	background: red;

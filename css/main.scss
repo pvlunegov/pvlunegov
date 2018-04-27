@@ -1,12 +1,12 @@
 
-@import "variables.scss";
+@import "variables.scss"; 
 
 // Misc (Miscelaneous)
 @import "_misc/fonts.scss";
 @import "_misc/mixins.scss";
 @import "_misc/adjustment.scss";
 @import "_misc/normalize.scss";
-@import "_misc/font-awesome.scss";
+@import "_misc/font-awesome.scss"; 
 
 // styles
 @import "sections/header.scss";
@@ -17,18 +17,19 @@
 @import "sections/portfolio.scss";
 @import "sections/footer.scss";
 @import "sections/auth.scss";
-
-
 @import "sections/tabs.scss";
 @import "sections/slideshow.scss";
 @import "sections/acco.scss";
 @import "sections/slider.scss";
 @import "sections/tabs.scss";
 @import "sections/works.scss";
-@import "sections/acco.scss";
+@import "sections/acco.scss"; 
+
+
+
 
 //media
-@import "adaptive/media.scss";
+@import "adaptive/media.scss"; 
 
 // API
-@import "sections/API.scss";
+@import "sections/API.scss"; 

@@ -72,8 +72,7 @@ html, body {
 
 .wrapper {
   text-align: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   min-height: 100%;
   overflow: hidden;
   position: relative;
