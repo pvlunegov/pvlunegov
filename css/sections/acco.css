@@ -31,7 +31,7 @@
 }
 
 .acco {
-  width: 400px;
+  max-width: 25rem;
   display: inline-block;
 }
 
