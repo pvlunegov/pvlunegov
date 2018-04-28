@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'Malina';
+  src: url("/fonts/Malina.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'fira_sansregular';
   src: url("/fonts/firasans-regular-webfont.eot");
   src: url("/fonts/firasans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/firasans-regular-webfont.woff2") format("woff2"), url("/fonts/firasans-regular-webfont.woff") format("woff"), url("/fonts/firasans-regular-webfont.ttf") format("truetype"), url("/fonts/firasans-regular-webfont.svg#fira_sansregular") format("svg");
@@ -49,10 +56,7 @@
 }
 
 .header_other-site {
-  background: #fff;
-  box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.2);
+  background: transparent;
   margin-bottom: 1.25rem;
 }
 
@@ -108,11 +112,15 @@
 }
 
 .other-site__name {
+  font-family: 'Malina';
+  font-size: 32px;
+  color: #fca211;
   display: inline-block;
   vertical-align: middle;
   top: 50%;
+  right: 0;
   position: absolute;
-  top: 2rem;
+  top: 0.7rem;
 }
 
 .other-site {
@@ -124,7 +132,7 @@
   text-align: left;
   top: 0;
   left: 0;
-  width: 28%;
+  width: 25%;
   height: 100%;
 }
 
@@ -146,11 +154,15 @@
 
 .other-site-menu {
   display: inline-block;
+  position: absolute;
+  right: 20%;
+  color: #fff;
 }
 
 .other-site-menu__list {
   display: inline-block;
   margin: 1.4375rem 1.25rem;
+  color: #fff;
 }
 
 .icon {
@@ -171,7 +183,7 @@
 }
 
 .icon_red_background {
-  background: red;
+  background: #a6161b;
 }
 
 .contacts {
@@ -240,6 +252,7 @@
   left: -9999px;
   margin-top: 0.625rem;
   opacity: 0;
+  -webkit-transition: opacity .5s;
   transition: opacity .5s;
 }
 
@@ -274,6 +287,7 @@
   left: -9999px;
   margin-top: 0.625rem;
   opacity: 0;
+  -webkit-transition: opacity .5s;
   transition: opacity .5s;
 }
 
@@ -307,6 +321,7 @@
   left: -9999px;
   margin-top: 0.625rem;
   opacity: 0;
+  -webkit-transition: opacity .5s;
   transition: opacity .5s;
 }
 

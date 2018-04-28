@@ -20,8 +20,8 @@
 }
 
 .header_other-site {
-	background: #fff;
-	@include box-shadow(0 -1px 3px 0 rgba(00, 00, 00, .2));
+	background: transparent;
+	//@include box-shadow(0 -1px 3px 0 rgba(00, 00, 00, .2));
 	margin-bottom: 1.25rem;
 	
 	.container {
@@ -72,11 +72,16 @@
 	max-width: rem(250px);
 }
 .other-site__name{
+	font-family: 'Malina';
+	font-size: 32px;
+	//font-weight: bold;
+	color: #fca211;
 	@include inlineblock(middle);
 	//max-width: rem(250px);
 	top: 50%;
+	right: 0;
 	position: absolute;
-    top: 2rem;
+    top: 0.7rem;
 }
 
 .other-site {
@@ -87,7 +92,7 @@
 	text-align: left;
 	top: 0;
 	left: 0;
-	width: 28%;
+	width: 25%;
 	height: 100%;
 }
 .other-site-right {
@@ -107,10 +112,14 @@
 }
 .other-site-menu {
 	display: inline-block;
+	position: absolute;
+	right: 20%;
+	color: #fff;
 }
 .other-site-menu__list {
 	display: inline-block;
-	margin: rem(23px) rem(20px);	
+	margin: rem(23px) rem(20px);
+	color: #fff;
 }
 
 
@@ -129,7 +138,7 @@
 	left: 0;
 }
 .icon_red_background {
-	background: red;
+	background: #a6161b;
 }
 
 

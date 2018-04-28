@@ -6,7 +6,13 @@
 @import "_misc/mixins.scss";
 @import "_misc/adjustment.scss";
 @import "_misc/normalize.scss";
-@import "_misc/font-awesome.scss"; 
+@import "_misc/font-awesome.scss"; // old font awesome, version 4
+@import "_misc/font-awesome/fontawesome.scss"; // PRO font-awesome minified, version 5.0.8
+@import "_misc/font-awesome/fa-brands.scss"; // PRO font-awesome minified, version 5.0.8
+@import "_misc/font-awesome/fa-light.scss"; // PRO font-awesome minified, version 5.0.8
+@import "_misc/font-awesome/fa-regular.scss"; // PRO font-awesome minified, version 5.0.8
+@import "_misc/font-awesome/fa-solid.scss"; // PRO font-awesome minified, version 5.0.8
+
 
 // styles
 @import "sections/header.scss";
@@ -24,7 +30,7 @@
 @import "sections/tabs.scss";
 @import "sections/works.scss";
 @import "sections/acco.scss"; 
-
+@import "chief_cook_site/content.scss";
 
 
 

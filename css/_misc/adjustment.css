@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'Malina';
+  src: url("/fonts/Malina.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'fira_sansregular';
   src: url("/fonts/firasans-regular-webfont.eot");
   src: url("/fonts/firasans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/firasans-regular-webfont.woff2") format("woff2"), url("/fonts/firasans-regular-webfont.woff") format("woff"), url("/fonts/firasans-regular-webfont.ttf") format("truetype"), url("/fonts/firasans-regular-webfont.svg#fira_sansregular") format("svg");
@@ -72,7 +79,8 @@ html, body {
 
 .wrapper {
   text-align: center;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   min-height: 100%;
   overflow: hidden;
   position: relative;
@@ -114,5 +122,16 @@ p {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   font-weight: normal;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
 }
 /*# sourceMappingURL=adjustment.css.map */

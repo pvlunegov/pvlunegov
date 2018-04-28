@@ -1,0 +1,8 @@
+
+.cook_content__red-background {
+    background: #a5151b;
+}
+
+.cook_content {
+    @extend %clearfix;
+}
